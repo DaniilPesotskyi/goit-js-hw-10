@@ -7,9 +7,12 @@ body {
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #fafafa;
+  background: radial-gradient(rgb(105, 105, 105) 2px, transparent 2px) 0 0 / 35px 35px, 
+     radial-gradient(rgb(80, 80, 80) 2px, transparent 2px) 17.5px 17.5px / 35px 35px;
   color: #212121;
   line-height: 1.5;
+
+
 }
 
 #search-box {
@@ -17,4 +20,64 @@ body {
   padding: 8px;
   max-width: 320px;
   margin-bottom: 16px;
+}
+
+/* COUNTRY LIST */
+
+.country-list {
+
+  list-style-type: none;
+
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  background-color: #fff;
+}
+
+.country-list-item {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.country-list-img {
+  width: 50px;
+}
+
+/* COUNTRY CARD */
+
+.country-card-main {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.country-card-img {
+  width: 100px;
+}
+
+.country-card-name {
+  font-weight: 500;
+}
+
+.country-data-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.country-data-item {
+  display: flex;
+  align-items: center;
+}
+
+.country-data-param {
+  font-size: 24px;
+  margin-right: 15px;
+}
+
+.country-data-value {
+  font-size: 20px;
 }
